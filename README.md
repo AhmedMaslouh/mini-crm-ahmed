@@ -20,7 +20,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` or 'npm start` for `client side`. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` or `npm start` for `client side`. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 Run `json-server --watch db.json` for `server side`.  Resources : `http://localhost:3000/contacts`
 
