@@ -12,18 +12,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation 
 
-cd mini-crm-ahmed
+`cd mini-crm-ahmed`
 
-npm install
+`npm install`
 
-npm install -g json-server
+`npm install -g json-server`
 
 ## Development server
 
-Run `ng serve` or 'npm start' for 'client side'. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` or 'npm start` for `client side`. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run 'json-server --watch db.json' for 'server side'.  Resources : 'http://localhost:3000/contacts'
+Run `json-server --watch db.json` for `server side`.  Resources : `http://localhost:3000/contacts`
 
 ## Authentification
-login : 'ahmed'
-password : 'user'
+login : `ahmed`
+password : `user`
