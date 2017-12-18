@@ -1,0 +1,32 @@
+.rowIndex {
+  font-size: 13px;
+  background-color: #EEE !important;
+  color:#666;
+  text-align: center;
+}
+.actionCell em {
+  cursor: pointer;
+}
+
+.ag-paging-page-summary-panel {
+  position: absolute;
+  right: calc(50% - 104px);
+}
+
+.ag-angle .ag-paging-button {
+  height: 25px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+[draggable="true"]:hover {
+  cursor: move; /* fallback: no `url()` support or images disabled */
+  cursor: -webkit-grab; /* Chrome 1-21, Safari 4+ */
+  cursor:    -moz-grab; /* Firefox 1.5-26 */
+  cursor:         grab; /* W3C standards syntax, should come least */
+}
+[draggable="true"] :active {
+  cursor: -webkit-grabbing;
+  cursor:    -moz-grabbing;
+  cursor:         grabbing;
+}

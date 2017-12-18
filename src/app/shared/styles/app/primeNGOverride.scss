@@ -1,0 +1,138 @@
+.ui-calendar.ui-calendar-w-btn input {
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.ui-calendar button {
+  display: inline-block;
+  width: 2.5em !important;
+  right: -1px;
+}
+
+.ui-inputtext {
+  height: 35px;
+}
+
+.ui-datepicker {
+  width: 100% !important;
+
+}
+
+.ui-autocomplete {
+  height: 100% !important;
+  display: flex !important;
+  width: 100% !important;
+}
+
+.ui-autocomplete-dropdown {
+  height: auto !important;
+}
+
+.ui-inputtext {
+  padding: 2px 16px !important;
+}
+
+/***_ Password Strength Bar _***/
+
+.ui-password-panel {
+
+  width: 14em !important;
+  background-color: #5d9cec !important;
+}
+
+.ui-password-panel .ui-password-meter {
+  zoom: 120% !important;
+}
+
+.ui-password-info {
+  color: white !important;
+}
+
+.ui-multiselect .ui-multiselect-trigger .fa {
+  margin-top: 0.8em !important;
+}
+
+.ui-multiselect-header .ui-multiselect-filter-container .fa {
+  top: .8em !important;
+  position: absolute !important;
+  left: .125em !important;
+}
+
+.ui-multiselect-header .ui-multiselect-close {
+  position: absolute !important;
+  right: .375em !important;
+  top: 0.8em !important;
+  display: block !important;
+  font-size: 1em !important;
+  border: 0 none !important;
+}
+
+.ui-multiselect-panel {
+  min-width: 100% !important;
+}
+
+.ui-multiselect-panel .ui-multiselect-item {
+  display: flex !important;
+  min-width: 100% !important;
+}
+
+.ui-multiselect-header .ui-multiselect-filter-container {
+  width: -webkit-calc(100% - 3em) !important;
+  width: -moz-calc(100% - 3em) !important;
+  width: calc(100% - 3em) !important;
+}
+
+.ui-multiselect .ui-multiselect-label {
+  display: block;
+  padding: .25em 2em .25em 1.25em !important;
+  width: auto;
+  border: 0;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: unset !important;
+}
+
+.ui-multiselect-panel .ui-multiselect-item label {
+  font-weight: unset !important;
+}
+
+.ui-fileupload-buttonbar button:not(.ui-fileupload-choose) {
+  display: none;
+}
+
+.ui-fieldset.last-child, fieldset:last-child {
+  border-bottom: 1px ridge !important;
+  border-radius: 7px !important;
+}
+
+.ui-fieldset legend {
+  width: auto !important;
+  min-width: 15% !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+  padding: 6px 8px !important;
+  border-radius: 7px !important;
+  margin-bottom: 5px !important;
+  font-size: 14px !important;
+  display: block !important;
+  line-height: inherit !important;
+  color: #515253 !important;
+  border-bottom: 1px solid #e5e5e5 !important;
+}
+
+.ui-fieldset.ui-widget {
+  font-size: 14px !important;
+  line-height: 1.52857143 !important;
+  background-color: #f5f7fa !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+.ui-fieldset.ui-widget-content {
+  border: 1px solid #D5D5D5 !important;
+  background: #ffffff !important;
+  color: #656565 !important;
+}
+
+.ui-fieldset.form-group {
+  margin-bottom: 15px !important;
+}

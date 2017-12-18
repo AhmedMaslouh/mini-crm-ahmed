@@ -1,0 +1,95 @@
+<div class="pull-right">
+  <div class="btn-group">
+    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <em class="fa fa-ellipsis-v fa-lg"></em>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right animated fadeInLeft" role="menu">
+      <li>
+        <a (click)="goToForm()">
+          <em class="fa fa-fw fa-plus mr"></em>
+          <span>Nouveau contact</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <em class="fa fa-fw fa-mail-forward mr"></em>
+          <span>Importer des contacts</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <em class="fa fa-fw fa-mail-reply mr"></em>
+          <span>Exporter des contacts</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<h3>Liste des contacts</h3>
+<div class="row" *ngFor="let contactMatrice of contactsMatrice">
+  <div class="col-md-4" *ngFor="let contact of contactMatrice">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="pull-right">
+          <div class="btn-group">
+            <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+              <em class="fa fa-ellipsis-v fa-lg text-muted"></em>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right animated fadeInLeft" role="menu">
+              <li>
+                <a (click)="goToForm(contact.id)">
+                  <em class="fa fa-fw fa-pencil mr"></em>
+                  <span>Editer</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <em class="fa fa-fw fa-send mr"></em>
+                  <span>Envoyer par message</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <em class="fa fa-fw fa-share-alt mr"></em>
+                  <span>Partager contact</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <em class="fa fa-fw fa-unlock-alt mr"></em>
+                  <span>Bloquer contact</span>
+                </a>
+              </li>
+              <li>
+                <a (click)="deleteContact(contact.id)">
+                  <em class="text-danger fa fa-fw fa-trash mr"></em>
+                  <span class="text-danger">Supprimer contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a class="pull-left text-muted">
+          <em class="fa" [ngClass]="contact.favContact ? 'fa-star text-warning' : 'fa-star-o'"></em>
+        </a>
+      </div>
+      <div class="panel-body text-center">
+        <a href="#" (click)="goToForm(contact.id)">
+          <img class="center-block img-responsive img-circle thumb64" src="assets/img/user/03.jpg" alt="Contact"/>
+        </a>
+        <h4>{{contact.name.toUpperCase()}}</h4>
+        <h5>{{contact.mobile}}</h5>
+        <p>Bonjour, je suis juste un contact dans votre liste de contacts et ceci est mon texte de présentation.
+          S'amuser!</p>
+      </div>
+      <div class="panel-footer clearfix">
+        <div class="pull-left"><a class="btn btn-xs btn-primary">Envoyer un message</a>
+        </div>
+        <div class="pull-right"><a class="btn btn-xs btn-default" (click)="goToForm(contact.id)"><span
+          class="btn-label"><i class="fa fa-pencil"></i></span>Editer</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

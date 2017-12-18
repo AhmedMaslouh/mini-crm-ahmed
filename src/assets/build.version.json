@@ -1,0 +1,11 @@
+{
+  "version":"DEV-0",
+  "front":{
+    "buildNb":"front-0",
+    "commit":"front-commit"
+  },
+  "back":{
+    "buildNb":"back-0",
+    "commit":"back-commit"
+  }
+}

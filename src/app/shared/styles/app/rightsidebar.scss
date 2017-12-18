@@ -1,0 +1,16 @@
+/* ========================================================================
+     Component: right sidebar
+ ========================================================================== */
+
+.ng-sidebar--opened.ng-sidebar--over {
+  box-shadow: 0 0 2.5em rgba(85, 85, 85, 0.5)
+}
+.ng-sidebar--right {
+  width:90%
+}
+@media only screen and (min-width: 768px) {
+  .ng-sidebar--right {
+    top: 55px !important;
+    width:70%
+  }
+}
